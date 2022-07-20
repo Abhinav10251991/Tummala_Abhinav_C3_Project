@@ -65,17 +65,17 @@ public class Restaurant {
     }
 
     //Implementing the new method to test TDD//
-   public int getOrderValue(String name1, String name2){
-        int price1 = 0;
-        int price2 = 0;
-        for(int i = 0;i<=2;i++) {
-            if (menu.get(i).getName().equals(name1)) {
-                price1 = menu.get(i).getPrice();
-                }
-            if(menu.get(i).getName().equals(name2)) {
-                price2 = menu.get(i).getPrice();
-            }
-        }
-       return price1+price2;
-   }
+//   public int getOrderValue(String name1, String name2){
+//        int price1 = 0;
+//        int price2 = 0;
+//        for(int i = 0;i<=2;i++) {
+//            if (menu.get(i).getName().equals(name1)) {
+//                price1 = menu.get(i).getPrice();
+//                }
+//            if(menu.get(i).getName().equals(name2)) {
+//                price2 = menu.get(i).getPrice();
+//            }
+//        }
+//       return price1+price2;
+//   }
 }
