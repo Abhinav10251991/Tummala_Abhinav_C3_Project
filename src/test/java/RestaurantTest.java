@@ -29,28 +29,19 @@ class RestaurantTest {
     @Test
     public void is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time(){
         //WRITE UNIT TEST CASE HERE
-//        Restaurant restaurants = Mockito.mock(Restaurant.class);
-//        LocalTime presentTime = LocalTime.parse("11:00:00");
-//        Mockito.when(restaurants.getCurrentTime()).thenReturn(presentTime);
-        //restaurant.getCurrentTime();
-//        //openingTime = restaurants.getCurrentTime();
-//        openingTime = LocalTime.parse("10:00:00");
-//        restaurants.isRestaurantOpen();
-//        openingTime = restaurants.getCurrentTime();
- //       openingTime = LocalTime.parse("01:30:00");
-  //      closingTime = LocalTime.parse("23:59:00");
+        Restaurant restaurants = Mockito.mock(Restaurant.class);
+        LocalTime presentTime = LocalTime.parse("22:01:00");
+        Mockito.when(restaurants.getCurrentTime()).thenReturn(presentTime);
+        openingTime = restaurants.getCurrentTime();
         assertTrue(restaurant.isRestaurantOpen());
     }
 
     @Test
     public void is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time(){
         //WRITE UNIT TEST CASE HERE
-//      restaurant =new Restaurant("Amelie's cafe","Chennai",openingTime,closingTime);
         Restaurant restaurants = Mockito.mock(Restaurant.class);
-        LocalTime presentTime = LocalTime.parse("23:30:00");
-        //LocalTime openingTime = LocalTime.now();
+        LocalTime presentTime = LocalTime.parse("10:31:00");
         Mockito.when(restaurants.getCurrentTime()).thenReturn(presentTime);
-        //restaurant.getCurrentTime();
         closingTime = restaurants.getCurrentTime();
         assertFalse(restaurants.isRestaurantOpen());
     }
