@@ -84,10 +84,10 @@ class RestaurantTest {
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     //<<<<<<<<<<<<<<<<<<<<<<<Adding TDD testcase>>>>>>>>>>>>>>
-//    @Test
-//    public void Select_item_Calculate_total_price_should_return_TotalPrice(){
-//        restaurant.addToMenu("Sizzling brownie",319);
-//        restaurant.getOrderValue("Sweet corn soup","Vegetable lasagne");
-//        assertEquals(388,restaurant.getOrderValue("Sweet corn soup","Vegetable lasagne"));
-//    }
+    @Test
+    public void Select_item_Calculate_total_price_should_return_TotalPrice(){
+        restaurant.addToMenu("Sizzling brownie",319);
+        restaurant.getOrderValue("Sweet corn soup","Vegetable lasagne");
+        assertEquals(388,restaurant.getOrderValue("Sweet corn soup","Vegetable lasagne"));
+    }
 }
